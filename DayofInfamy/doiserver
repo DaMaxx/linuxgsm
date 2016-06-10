@@ -51,8 +51,8 @@ githubbranch="master"
 appid="237410"
 
 # Server Details
-servicename="ins-server"
-gamename="Insurgency"
+servicename="doi-server"
+gamename="Day of Infamy"
 engine="source"
 
 # Directories
