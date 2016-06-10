@@ -2,7 +2,7 @@
 # LGSM install_config.sh function
 # Author: Daniel Gibbs
 # Website: https://gameservermanagers.com
-lgsm_version="210516"
+lgsm_version="110616"
 
 local modulename="Install"
 
@@ -215,6 +215,15 @@ elif [ "${gamename}" == "Day of Defeat" ]; then
 elif [ "${gamename}" == "Day of Defeat: Source" ]; then
 	echo -e "downloading lgsm-default.cfg...\c"
 	wget -N /dev/null ${githuburl}/DayOfDefeatSource/cfg/lgsm-default.cfg 2>&1 | grep -F HTTP | cut -c45- | uniq
+	sleep 1
+	fn_sourceconfig
+elif [ "${gamename}" == "Day of Infamy" ]; then
+	echo -e "downloading lgsm-default.cfg...\c"
+	wget -N /dev/null ${githuburl}/DayOfInfamy/cfg/lgsm-default.cfg 2>&1 | grep -F HTTP | cut -c45- | uniq
+	echo -e "downloading mapcycle_doi.txt...\c"
+	wget -N /dev/null ${githuburl}/DayOfInfamy/cfg/mapcycle_doi.txt 2>&1 | grep -F HTTP | cut -c45- | uniq
+	echo -e "downloading subscribed_file_ids.txt...\c"
+	wget -N /dev/null ${githuburl}/DayOfInfamy/cfg/subscribed_file_ids.txt 2>&1 | grep -F HTTP | cut -c45- | uniq
 	sleep 1
 	fn_sourceconfig
 elif [ "${gamename}" == "Don't Starve Together" ]; then
