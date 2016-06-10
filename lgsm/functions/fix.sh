@@ -37,7 +37,7 @@ if [ "${function_selfname}" != "command_install.sh" ]; then
 		fix_csgo.sh
 	elif [ "${gamename}" == "Don't Starve Together" ]; then
 		fix_dst.sh
-	elif [ "${gamename}" == "Insurgency" ]; then
+	elif [ "${gamename}" == "Insurgency" ]||[ "${gamename}" == "Day fo Infamy" ]; then
 		fix_ins.sh
 	elif [ "${gamename}" == "ARMA 3" ]; then
 		fix_arma3.sh
