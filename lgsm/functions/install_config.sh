@@ -219,11 +219,11 @@ elif [ "${gamename}" == "Day of Defeat: Source" ]; then
 	fn_sourceconfig
 elif [ "${gamename}" == "Day of Infamy" ]; then
 	echo -e "downloading lgsm-default.cfg...\c"
-	wget -N /dev/null ${githuburl}/DayOfInfamy/cfg/lgsm-default.cfg 2>&1 | grep -F HTTP | cut -c45- | uniq
+	wget -N /dev/null ${githuburl}/DayofInfamy/cfg/lgsm-default.cfg 2>&1 | grep -F HTTP | cut -c45- | uniq
 	echo -e "downloading mapcycle_doi.txt...\c"
-	wget -N /dev/null ${githuburl}/DayOfInfamy/cfg/mapcycle_doi.txt 2>&1 | grep -F HTTP | cut -c45- | uniq
+	wget -N /dev/null ${githuburl}/DayofInfamy/cfg/mapcycle_doi.txt 2>&1 | grep -F HTTP | cut -c45- | uniq
 	echo -e "downloading subscribed_file_ids.txt...\c"
-	wget -N /dev/null ${githuburl}/DayOfInfamy/cfg/subscribed_file_ids.txt 2>&1 | grep -F HTTP | cut -c45- | uniq
+	wget -N /dev/null ${githuburl}/DayofInfamy/cfg/subscribed_file_ids.txt 2>&1 | grep -F HTTP | cut -c45- | uniq
 	sleep 1
 	fn_sourceconfig
 elif [ "${gamename}" == "Don't Starve Together" ]; then
